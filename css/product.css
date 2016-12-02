@@ -1,0 +1,76 @@
+.button-container {
+	margin-bottom: 10px;
+	padding-right: 10px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.table-container {
+	border: 2px solid #5F9EA0;
+	max-width: 100%;
+	margin: auto;
+}
+
+.table-container table {
+	width: 100%;
+	text-align: center;
+}
+
+.table-container th {
+	background: #5F9EA0;
+	color: white;
+	padding: 10px;
+}
+
+.table-container tbody {
+	background: white;
+}
+
+.table-container tbody tr {
+	cursor: pointer;
+
+}
+
+.table-container tbody tr:nth-child(odd) {
+	background: lightgray;
+}
+
+.table-container tbody tr:hover {
+	background: lightblue;
+}
+
+.table-container tbody td {
+	padding: 0 10px;
+}
+
+.table-container tbody td span {
+	display: block;
+	padding: 10px 0;
+}
+
+.table-container tbody td input {
+	height: 30px;
+	width: 90%;
+	border: 1.5px solid blue;
+	padding: 0 2px;
+}
+
+.select-category {
+	height:30px;
+	padding:5px;
+	min-width: 12%;
+	margin-right: 15px;
+}
+
+.add-prod-name {
+	width:19%;
+}
+
+.add-prod-desc {
+	width:33%;
+}
+
+
+
+
+
