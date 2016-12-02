@@ -1,7 +1,7 @@
 $(document).ready(function() {
-	//var loginViewModel = new loginViewModel();
 
 	ko.applyBindings(new LoginViewModel());
+
 });
 
 function LoginViewModel() {
@@ -21,6 +21,6 @@ function validateUser(username, password) {
 	var validUsers = { username: "test", password: "test"};
 
 	if(username == validUsers.username && password == validUsers.password) {
-		window.open('http://localhost/product.html', "_self");
+		window.open('http://localhost:8000/home', "_self");
 	}
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="_token" content="{{ csrf_token() }}">
 	<title>Products</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/product.css">
@@ -18,7 +19,7 @@
 				<button data-bind="click: cancelChange" class="button-common">Cancel</button>
 			</div>
 			<div data-bind="visible: isEdited() == false" class="add-prod-container">
-				<label>Category: </label><select data-bind="options: categoryList, optionsText: 'category', value: selectedCategory" class="select-category"></select>
+				<label>Category: </label><select data-bind="options: categoryList, optionsText: 'categoryName', value: selectedCategory" class="select-category"></select>
 				<label>Name: </label>
 					<input type="text" name="productName" id="productName" class="input-tall add-prod-name">
 				<label>Description: </label>
